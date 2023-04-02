@@ -38,6 +38,19 @@ function populateHeader(jsonObj){
     
     // Inject the complete H1 element into the DOM, inside the HEADER
     header.appendChild(headerH1);
+
+    //lab
+    //displaying the head office
+    let headOffice = document.createElement("p");
+    headOffice.textContent = jsonObj.headOffice;
+    header.appendChild(headOffice);
+
+
+    //displaying the established date
+    let establishedDate = document.createElement("p");
+    establishedDate.textContent = jsonObj.establishedDate;
+    header.appendChild(establishedDate);
+
 }
 
 
